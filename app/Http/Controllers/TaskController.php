@@ -5,15 +5,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AuthController extends Controller
+class TaskController extends Controller
 {
     /**
-     * トップページを表示する
-     * 
+     * タスク一覧ページ を表示する
+     *
      * @return \Illuminate\View\View
      */
-     public function index()
+     public function list()
      {
-         return view('index');
+         return view('task.list');
      }
 }
