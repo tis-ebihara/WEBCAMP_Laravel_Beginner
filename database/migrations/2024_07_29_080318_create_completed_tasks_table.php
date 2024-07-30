@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comleted_tasks', function (Blueprint $table) {
+        Schema::create('completed_tasks', function (Blueprint $table) {
             $table->unsignedInteger('id');
             $table->string('name', 128)->comment('タスク名');
             $table->date('period')->comment('タスクの期限');
@@ -22,7 +22,7 @@ return new class extends Migration
             // $table->timestamps();
             $table->dateTime('created_at')->useCurrent()->comment('タスク完了日時');
             $table->dateTime('updated_at')->useCurrent()->useCurrentOnUpdate();
-            // 
+            //
             $table->primary('id');
         });
     }
