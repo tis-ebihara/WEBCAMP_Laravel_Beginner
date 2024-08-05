@@ -4,7 +4,7 @@
 @section('contets')
     <h1>ログイン</h1>
     @if (session('front.user_register_success') == true)
-                登録されました<br>
+                ユーザを登録しました！！<br>
     @endif
 
     @if ($errors->any())
